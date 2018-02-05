@@ -135,11 +135,14 @@ body,
 /*END OF ABOUT*/
 
 /*FOOTER*/
+.content {
+  min-height: calc(100vh - 70px);
+}
 .foot-custom{
 	color: #d3d3d3;
 	background-color: #222222; /*blue-#2196f3*/
-	position: absolute;
-    bottom:0;
+	width:100%;
+    position: absolute;
 	padding: 3%;
 }
 .divider {

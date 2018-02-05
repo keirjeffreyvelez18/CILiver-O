@@ -13,7 +13,7 @@
 </script>
 
     <strong><h2><?php echo(validation_errors())?></h2></strong>
-    <div class = "container-fluid">
+    <div class = "container-fluid content">
         <strong><h2 id = "black" style="text-align: center">Profile</h2><br></strong>
         <strong><div class="text-success" style="text-align: center"> <?php echo $this->session->flashdata('update'); ?> </div></strong>
         <strong><div class="text-danger" style="text-align: center"> <?php echo $this->session->flashdata('error'); ?> </div></center></strong>
@@ -217,7 +217,7 @@
         </div>
     </div>
 
-    <footer class="navbar-fixed-bottom">
+    <footer>
       <?php include_once('Lib/layout/footer.php');?>
     </footer>
 

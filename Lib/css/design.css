@@ -5,3 +5,8 @@ div .login{
 div .register{
 	background-color: #648c58;
 }
+
+div.quiz-container{
+	background-color: #e74c3c; /*maroon*/
+	color: #ffffff;
+}

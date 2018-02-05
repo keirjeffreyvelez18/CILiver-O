@@ -2,7 +2,7 @@
 
 <?php echo(validation_errors())?> 
  <!--HEADER-->   
-<div class="bg">
+<div class="bg content">
 
 <!-- Welcome Message -->   
     <div class = "container-fluid header-blueP">

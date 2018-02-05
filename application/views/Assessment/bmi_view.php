@@ -12,7 +12,7 @@
 		<!-- End of Progress Indicator -->
 
 		<!-- ================================Container================================ -->
-		<div class="container quiz-container">
+		<div class="container content">
 			<div class="row">
 				<div class="col-lg-12 content1-custom form-group">
 					
@@ -42,7 +42,7 @@
 	       					</form>
 						</div>
 
-						<div class="col-lg-5 content1-custom form-group"><!-- This div must be for the interpretations and result -->
+						<div class="col-lg-5  quiz-container form-group"><!-- This div must be for the interpretations and result -->
 							<h3>Result</h3>
 							<input class="form-control" type="text" name="bmiScore" placeholder="Score" readonly="" value="<?php echo round($result_bmi,2); ?>">
 							<br>

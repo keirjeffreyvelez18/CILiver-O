@@ -8,8 +8,9 @@
 	       		<?php include_once('Lib/layout/progress.php');?>
 	       	</div>
 	    </div>
-	    <div class="quiz-container">
-			<div class = " ">
+
+	    <div class="content">
+			<div class = "container quiz-container">
 			    <?php if ($index<18): ?>
 			    	<form method="post" action="<?php echo base_url('index.php/blq/show_blq');?>" class="container">
 			    <?php else: ?>

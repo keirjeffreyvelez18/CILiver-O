@@ -6,6 +6,7 @@
     <link rel = "shortcut icon" type = "image/png" href="<?php echo base_url('Lib/imgs/dark-logo.png')?>"><!-- Diri ma set website icon-->
     <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('Lib/css/style.css')?>"> -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('Lib/css/bootstrap.css')?>" >
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('Lib/css/design.css')?>" >
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('Lib/css/less.css')?>" >
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('Lib/css/animate.css')?>" >
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('Lib/css-progress-wizard-master/css/progress-wizard.min.css')?>" >
