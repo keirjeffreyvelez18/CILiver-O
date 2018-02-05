@@ -13,14 +13,19 @@
 </script>
 
     <strong><h2><?php echo(validation_errors())?></h2></strong>
-    <div class = "container-fluid content">
-        <strong><h2 id = "black" style="text-align: center">Profile</h2><br></strong>
+    
+    <div class = "container content">
+        
         <strong><div class="text-success" style="text-align: center"> <?php echo $this->session->flashdata('update'); ?> </div></strong>
         <strong><div class="text-danger" style="text-align: center"> <?php echo $this->session->flashdata('error'); ?> </div></center></strong>
         
-        <div class="container profile">
+        <div class="row header-blueP">
+          <strong><h2 id = "black" style="text-align: center">Profile</h2><br></strong>
+        </div>
+
+        <div class="row container quiz-container profile">
               <table>
-                  <tr>
+                  <tr class="row">
                     <td>
                       <span>E-mail  : </span>
                     </td>
@@ -32,7 +37,8 @@
                     </td>
                   </tr>
                   <br>
-                  <tr>
+
+                  <tr class="row">
                     <td>
                       <span>Name  : </span>&nbsp&nbsp
                     </td>
@@ -76,7 +82,7 @@
 
                   </tr>
 
-                  <tr>
+                  <tr class="row">
                     <td>
                       <span>Password  : </span> &nbsp&nbsp
                     </td>
@@ -126,7 +132,7 @@
                     </form>
                   </tr>
 
-                  <tr>
+                  <tr class="row">
                     <td> 
                        <span>Birthday  : </span> 
                     </td>
@@ -169,7 +175,8 @@
 
                     </form>
                   </tr>
-                  <tr>
+
+                  <tr class="row">
                     <td> 
                       <span>Gender : </span>                      
                     </td>

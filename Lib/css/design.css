@@ -6,7 +6,12 @@ div .register{
 	background-color: #648c58;
 }
 
-div.quiz-container{
+div .quiz-container{
+	background-color: #e74c3c; /*maroon*/
+	color: #ffffff;
+}
+
+div .profile{
 	background-color: #e74c3c; /*maroon*/
 	color: #ffffff;
 }
