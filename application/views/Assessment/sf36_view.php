@@ -99,5 +99,10 @@
 				</form>
 			</div>
 		</div>
+
+		<footer>
+		    <?php include_once('Lib/layout/footer.php');?>
+		</footer>
+
 	</body>
 </html>

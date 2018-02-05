@@ -16,11 +16,11 @@
 			<div class="row">
 				<div class="col-lg-12 content1-custom form-group">
 					
-					<div class="row content2-custom"><!-- This div is for the header -->
+					<div class="row header-blueP"><!-- This div is for the header -->
 						<div class="col-lg-12">
 							<h1>
 								<span class = "glyphicon glyphicon-dashboard"></span>
-								Welcome to the Body Mass Index Test
+								Welcome to the Body Mass Index Calculator
 								<button class = "btn btn-md btn-success" type = "button" href = "#" style="float:right">
 		       				 	Proceed
 		       				 	<span class = "glyphicon glyphicon-chevron-right"></span>
@@ -40,24 +40,6 @@
 								
 								<input type="Submit" name="calculate" value="Calculate" class="btn btn-md btn-success form-control ">
 	       					</form>
-
-							<h2>Legend</h2>
-							<!-- Scales -->
-						       	<div class="progress">
-								  <div class="progress-bar" role="progressbar" style="width:25%; background:#12e5d6; color: black;">
-								    UnderWeight
-								  </div>
-								  <div class="progress-bar" role="progressbar" style="width:25% ; background:#12e551;color: black;">
-								    Normal
-								  </div>
-								  <div class="progress-bar" role="progressbar" style="width:25% ; background:#e0dd3c;color: black;">
-								    Overweight
-								  </div>
-								  <div class="progress-bar" role="progressbar" style="width:25% ; background:#f71616;color: black;">
-								    Obese
-								  </div>
-								</div>
-							<!-- Scales -->	
 						</div>
 
 						<div class="col-lg-5 content1-custom form-group"><!-- This div must be for the interpretations and result -->
@@ -68,7 +50,7 @@
 							<br>
 
 							<!-- ================================BMI CHART================================ -->
-							<div class="row body-maroonP">
+							<div class="row">
 								<div class="col-lg-12">
 									  <script type="text/javascript">
 										window.onload = function () {
@@ -114,6 +96,25 @@
 							</div>
 							<!-- ================================END of BMI  	 Chart================================ -->
 							<br>
+
+							<!-- Scales -->
+						       	<div class="progress">
+								  <div class="progress-bar" role="progressbar" style="width:25%; background:#12e5d6; color: black;">
+								    UnderWeight
+								  </div>
+								  <div class="progress-bar" role="progressbar" style="width:25% ; background:#12e551;color: black;">
+								    Normal
+								  </div>
+								  <div class="progress-bar" role="progressbar" style="width:25% ; background:#e0dd3c;color: black;">
+								    Overweight
+								  </div>
+								  <div class="progress-bar" role="progressbar" style="width:25% ; background:#f71616;color: black;">
+								    Obese
+								  </div>
+								</div>
+
+							<!-- Scales -->		
+
 						</div>
 
 					</div>
@@ -123,5 +124,10 @@
 			</div>
 		</div>
 		<!-- ================================END of Container================================ -->
+
+		<footer>
+		    <?php include_once('Lib/layout/footer.php');?>
+		</footer>
+
 	</body>
 </html>

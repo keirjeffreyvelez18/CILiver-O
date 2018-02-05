@@ -2,8 +2,8 @@
 
 
 </head>
-	<body>
-		<div class="container">
+<body>
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 form-group">
 				<h2>Liver Assessment</h2>
@@ -22,8 +22,11 @@
 				<?php include_once('Lib/layout/progress.php');?>
 			</div>
 		</div>
-		</div>
+	</div>
 
-		
-	</body>
+	<footer class="navbar-fixed-bottom">
+	    <?php include_once('Lib/layout/footer.php');?>
+	</footer>
+	
+</body>
 </html>

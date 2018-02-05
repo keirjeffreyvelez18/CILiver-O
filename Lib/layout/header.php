@@ -28,18 +28,22 @@
             var x = document.getElementById("pass");
                 if (x.type === "text") {
                     x.type = "password";
+                    var visibile = document.getElementById("VPassword").className+='glyphicon glyphicon-eye-open';                    
                 } else {
                     x.type = "text";
+                    var visibile = document.getElementById("VPassword").className+='glyphicon glyphicon-eye-close';
                 }
         } 
-        function password() {
-            var x = document.getElementById("password");
-                if (x.type === "text") {
-                    x.type = "password";
-                } else {
-                    x.type = "text";
-                }
-        }
+        // function password() {
+        //     var x = document.getElementById("password");
+        //         if (x.type === "text") {
+        //             x.type = "password";
+        //             var visibile = document.getElementById("VPassword").className+='glyphicon glyphicon-eye-open';  
+        //         } else {
+        //             x.type = "text";
+        //             var visibile = document.getElementById("VPassword").className+='glyphicon glyphicon-eye-open';  
+        //         }
+        // }
     </script>
 
     
@@ -124,8 +128,8 @@
                 <?php if ($this->session->userdata('isLoggedIn')): ?>
                     <li><a href="<?php echo base_url('index.php/home/logout') ?>" ><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                 <?php else: ?>
-                    <li><a data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
-                    <li><a data-toggle="modal" data-target="#register"><span class="glyphicon glyphicon-registration-mark "></span> Register</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#register"><span class="glyphicon glyphicon-registration-mark "></span> Register</a></li>
                 <?php endif ?>
                
             </ul>
@@ -174,6 +178,7 @@
             <center>
         <form method="post" action="<?php echo base_url('index.php/home/login');?>">
             <div class="text-success" style="text-align: "><?php echo $this->session->flashdata('success')?></div>
+            
             <div class="col-sm-9 input-group">
                 <input class="form-control" placeholder="Email" name="email" type="email" value= "<?php echo set_value('email'); ?>"><br>
                 <sup>Email serves as username</sup><br><br>
@@ -185,7 +190,8 @@
                 <input type="password" name="password" class = "form-control"  id="pass" placeholder="Password" value = "<?php echo set_value('password'); ?>" required><br>
                  <div class="input-group-addon">
                     <div>
-                        <input type="checkbox" name="" title="Show Password" onclick="passw()" >
+                        <span id = "VPassword" class="glyphicon glyphicon-eye-open" title = "Show Password" onclick="passw()"></span>
+                        <!-- <input type="checkbox" name="" title="Show Password" onclick="passw()" > -->
                     </div>
                 </div>
             </div><br>
@@ -226,7 +232,9 @@
           <h4 class="modal-title">Register</h4>
         </div>
         <div class="modal-body">
+
             <form method="post" action="<?php  echo base_url('index.php/home/register')?>">
+
                 <table>
                     <tr>
                         <td class="col-sm-2">
@@ -251,9 +259,12 @@
                         </td>
                         <td class="col-md-11">
                             <div class="input-group">
-                                <input type="password" name="password" class = "form-control"  id="pass" placeholder="Password" value = "<?php echo set_value('password'); ?>" required><br>
+                                <input type="password" name="password" class = "form-control"  id="password" placeholder="Password" value = "<?php echo set_value('password'); ?>" required><br>
                                  <div class="input-group-addon">
-                                    <input type="checkbox" name="" title="Show Password" onclick="passw()" >
+                                    <div>
+                                        <span id = "VPassword" class="glyphicon glyphicon-eye-open" title = "Show Password" onclick="passw()"></span>
+                                        <!-- <input type="checkbox" name="" title="Show Password" onclick="passw()" > -->
+                                    </div>
                                 </div>
                             </div>
                         </td>
@@ -267,7 +278,7 @@
                                 <div class="input-group-addon">
                                     <i class="glyphicon glyphicon-calendar"></i>
                                 </div>
-                                <input type="date" name="birthday" class = "form-control " value = "<?php echo set_value('birthday'); ?>" required >
+                                <input type="date" name="birthday" class = "form-control " value = "<?php echo set_value('birthday'); ?>" max="2000-12-31" required >
                                 
                             </div>
                         </td>
@@ -287,6 +298,7 @@
                     </tr>
                 </table>
                 <input  type="submit" name="register_btn" value="Register" class = "btn btn-primary btn-block"> 
+
             </form>
 
         </div>

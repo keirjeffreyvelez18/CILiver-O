@@ -31,17 +31,37 @@
 	       		<div class = "col-lg-8">
 	       			<div class = "container-fluid m-middle">
 	       				<center><h3>Results Go Here!</h3></center><!-- result goes here -->
-	       					<table>
-	       						<tr>
-	       							<h3>CLDQ: <?php echo $sf36; ?></h3>
-	       						</tr>
-	       						<tr>
-	       							<h3>BLQ: <?php echo $blq; ?></h3>
-	       						</tr>
-	       						<tr>
-	       							<h3>CLDQ: <?php echo $cldq; ?></h3>
-	       						</tr>
-	       					</table>
+
+	       				<div class="row">
+	       						<div class="col-lg-12">
+	       							<form method="post" action="<?php echo site_url('result/show_result'); ?>">
+									  <ul class="nav nav-pills">	
+										    <li>
+										    	<input class="btn btn-primary" type="Submit" name="qCat" value="SF36">
+										    </li>
+										    <li>
+										    	<input class="btn btn-primary" type="Submit" name="qCat" value="BLQ">
+										    </li>
+										    <li>
+										    	<input class="btn btn-primary" type="Submit" name="qCat" value="CLDQ">
+										    </li>
+									  </ul>
+									</form>
+
+									<?php include_once('Lib/layout/chart_results.php');?> 
+
+									<div id="sf36" style="width: 100%; height: 170px;" 
+									class=""></div>
+
+									<div id="blq" style="width: 100%; height: 170px;" 
+									class=""></div>
+
+									<div id="cldq" style="width: 100%; height: 170px;" 
+									class=""></div>
+
+								</div>
+							</div>
+	       				   
 	       				<br>
 	       			</div>
 	       		</div>
@@ -57,10 +77,16 @@
 	       		</div>
 	       	</div>
 	    </div>
-
     <!--End of Result Form-->
+	</div><br>
 
-	</div>
+	<footer>
+		<?php include_once('Lib/layout/footer.php');?>
+	</footer>
+	
+	<!-- STATIC FILES -->
+	<script type="text/javascript" src="<?php echo base_url('Lib/js/bootstrap.min.js')?>" ></script>
+    <script type="text/javascript" src="<?php echo base_url('Lib/js/jquery.min.js')?>" ></script>
 
 </body>
 </html>
