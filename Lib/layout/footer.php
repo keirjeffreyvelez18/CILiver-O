@@ -5,21 +5,23 @@
   		</div>		
   	</div>
 </footer> -->
+	<footer>
+		<div class="container-fluid foot-custom" id="footer">
+		    <div class = "col-lg-4">
+		        <center><p> &copy; 2017 - <?php echo date("Y"); ?> LIVER-O </p></center>
+		    </div>
 
-	<div class="container-fluid foot-custom" id="footer">
-	    <div class = "col-lg-4">
-	        <center><p> &copy; 2017 - <?php echo date("Y"); ?> LIVER-O </p></center>
+		    <div class = "col-lg-4">
+		        <center><p> &copy; 2017 - <?php echo date("Y"); ?> LIVER-O </p></center>
+		    </div>
+
+		    <div class = "col-lg-4">
+		        <center>
+		        	<p>Privacy&Policy | Sitemap | Support</p>
+		        </center>
+		    </div>
 	    </div>
+	</footer>
 
-	    <div class = "col-lg-4">
-	        <center><p> &copy; 2017 - <?php echo date("Y"); ?> LIVER-O </p></center>
-	    </div>
-
-	    <div class = "col-lg-4">
-	        <center>
-	        	<p>Privacy&Policy | Sitemap | Support</p>
-	        </center>
-	    </div>
-    </div>
-
-  </div>
+	</body>
+</html>

@@ -223,10 +223,8 @@
               <strong><h4 id = "black" style="text-align: center">BMI</h4><br></strong> -->
         </div>
     </div>
-
-    <footer>
-      <?php include_once('Lib/layout/footer.php');?>
-    </footer>
-
-</body>
+    
+<!-- ====================================FOOTER HERE=================================================== -->
+    <?php include_once('Lib/layout/footer.php');?>
+<!-- ====================================FOOTER HERE=================================================== -->
   

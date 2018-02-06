@@ -101,11 +101,11 @@ class Assessment extends CI_Controller {
 		if ($btn=="Next") {
 			$data['index']+=$a;
 			$this->get_score();
-			$data['btn'] = "animated fadeInRight";
+			$data['btn'] = "animated bounceInRight";
 		} elseif ($btn=="Back") {
 			$data['index']=$a-1;
 			$this->get_score();
-			$data['btn'] = "animated fadeInLeft";
+			$data['btn'] = "animated bounceInLeft";
 		}
 
 		$this->session->set_userdata('cur_uAns',$this->checkContent($qcategory));	

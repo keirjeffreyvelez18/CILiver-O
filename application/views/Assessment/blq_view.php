@@ -95,9 +95,6 @@
 			</div>
 		</div>
 
-		<footer>
-		    <?php include_once('Lib/layout/footer.php');?>
-		</footer>
-
-	</body>
-</html>
+<!-- ====================================FOOTER HERE=================================================== -->
+    <?php include_once('Lib/layout/footer.php');?>
+<!-- ====================================FOOTER HERE=================================================== -->

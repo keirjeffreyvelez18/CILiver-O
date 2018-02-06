@@ -15,7 +15,7 @@
 	
 		<div class = "container m-middle content1-custom">
 	       	<div class = "row">
-	       		<div class = "col-lg-12 content2-custom">
+	       		<div class = "col-lg-12 header-blueP">
 	       			<h1>
 	       				<span class = "glyphicon glyphicon-plus"></span>
 	       				General Health Assessment
@@ -37,7 +37,7 @@
 	       							<form method="post" action="<?php echo site_url('result/show_result'); ?>">
 									  <ul class="nav nav-pills">	
 										    <li>
-										    	<input class="btn btn-primary" type="Submit" name="qCat" value="SF36">
+										    	<input class="btn btn-primary btn-blk" type="Submit" name="qCat" value="SF36">
 										    </li>
 										    <li>
 										    	<input class="btn btn-primary" type="Submit" name="qCat" value="BLQ">
@@ -80,13 +80,6 @@
     <!--End of Result Form-->
 	</div><br>
 
-	<footer>
-		<?php include_once('Lib/layout/footer.php');?>
-	</footer>
-	
-	<!-- STATIC FILES -->
-	<script type="text/javascript" src="<?php echo base_url('Lib/js/bootstrap.min.js')?>" ></script>
-    <script type="text/javascript" src="<?php echo base_url('Lib/js/jquery.min.js')?>" ></script>
-
-</body>
-</html>
+<!-- ====================================FOOTER HERE=================================================== -->
+	<?php include_once('Lib/layout/footer.php');?>
+<!-- ====================================FOOTER HERE=================================================== -->
