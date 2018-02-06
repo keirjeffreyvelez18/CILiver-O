@@ -42,7 +42,7 @@
 	       					</form>
 						</div>
 
-						<div class="col-lg-7  quiz-container form-group"><!-- This div must be for the interpretations and result -->
+						<div class="col-lg-7  bmi-container form-group"><!-- This div must be for the interpretations and result -->
 							<form class="bmiForm" method="post" action="<?php echo base_url('index.php/Assessment/post_bmi'); ?>">
 								<h3>Result</h3>
 								<input class="form-control" type="text" name="bmiScore" placeholder="Score" value="<?php echo round($result_bmi,2); ?>" readonly="">

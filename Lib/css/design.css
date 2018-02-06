@@ -6,9 +6,15 @@ div .register{
 	background-color: #648c58;
 }
 
+div .bmi-container{
+	background-color: #e74c3c; /*friendly red*/
+	color: #ffffff;
+}
+
 div .quiz-container{
 	background-color: #e74c3c; /*friendly red*/
 	color: #ffffff;
+	width: 80%;
 }
 
 div .profile{
