@@ -163,24 +163,6 @@ body,
 /*END OF RESULT STYLE*/
 
 
-/*PARALAX*/
-
-/*.parallax { 
-
-    background-image: url("../imgs/slide3.jpg");
-
-
-    height: 500px; 
-
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
-
-/*END OF PARALAX*/
-
 /*To be organized*/ 
 body{
     padding: 0px;
@@ -200,23 +182,9 @@ body{
     width: 100%;
     padding: 5px;
 }
-.form-maroon{
-    color: #ffffff;
-    background-color: #e74c3c;
-    background: linear-gradient(to right, #b71c1c, #880e4f );
-    width: 100%; /*important, changing the default width of forms be careful*/
-    padding: 30px;
-    border: 1px solid #910039;
-    margin: 5px auto;
-}
-
 form{
-    /*color: #ffffff;*/
-    /*background-color: #910039;*/
-    /*background: linear-gradient(to right, #b71c1c, #880e4f );*/
-    width: 100%; /*important, changing the default width of forms be careful*/
+    width: 100%;
     padding: 30px;
-/*    border: 1px solid #910039;*/
     margin: 5px auto;
 }
 .textField{
@@ -244,6 +212,7 @@ form{
     display: block;
     position: relative;
     padding-left: 35px;
+    padding-right: 35px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;

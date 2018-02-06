@@ -10,14 +10,17 @@
 	    </div>
 
 	    <div class="content">
+			
 			<div class = "container quiz-container">
 			    <?php if ($index<37): ?>
 			    	<form method="post" action="<?php echo base_url('index.php/Assessment/sf36') ?>" class="container">
 			    <?php else: ?>
 			    	<form method="post" action="<?php echo base_url('index.php/Assessment/sf36_save') ?>" class="container">
 			    <?php endif ?>
+
 				<form method="post" action="<?php echo base_url('index.php/Assessment/sf36') ?>" class="container">
 						<table class="table table-inverse" id = "white">
+
 							<thead align="center">
 								<tr>
 									<?php if ($index!=37): ?>
@@ -25,9 +28,25 @@
 									<?php else: ?>
 										<th class="col-md-9">Thank you for Answering</th>
 									<?php endif ?>
-									
+								</tr>
+								<tr>
+									<td class="<?php if($index==37){echo 'collapse';} ?>">
+										<!-- Progress Trackers -->
+									       	<div class = "row">
+									       		<div class = "col-lg-12">
+									       			<div class="progress">
+													 	<div class="progress-bar" role="progressbar" aria-valuenow="70"
+													 	aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $progress ?>%;">
+													  	<?php echo round($progress) ?>%
+													 	</div>
+													</div>
+									       		</div>
+									      	 </div>
+										<!-- Progress Trackers -->	
+									</td>
 								</tr>
 							</thead>
+							
 							<tbody>
 								<?php foreach($questiontab as $row): ?>
 									<tr>
@@ -68,6 +87,7 @@
 									</td>
 								</tr>
 							</tbody>
+
 							<tfoot>
 								<tr>
 									<td>
@@ -80,22 +100,9 @@
 											<input type="submit" name="submit" class="btn btn-primary" value="Next">
 										<?php endif ?>
 									</td>
-									<td class="<?php if($index==37){echo 'collapse';} ?>">
-										<!-- Progress Trackers -->
-									       	<div class = "row">
-									       		<div class = "col-lg-12">
-									       			<div class="progress">
-													  <div class="progress-bar" role="progressbar" aria-valuenow="70"
-													  aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $progress ?>%;">
-													  		<?php echo round($progress) ?>%
-													  </div>
-													</div>
-									       		</div>
-									       	</div>
-										<!-- Progress Trackers -->	
-									</td>
 								</tr>
 							</tfoot>
+
 						</table>
 				</form>
 			</div>

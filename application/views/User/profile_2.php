@@ -20,7 +20,7 @@
         <strong><div class="text-danger" style="text-align: center"> <?php echo $this->session->flashdata('error'); ?> </div></center></strong>
         
         <div class="row header-blueP">
-          <strong><h2 id = "black" style="text-align: center">Profile</h2><br></strong>
+          <strong><h3 id = "black" style="text-align: center">Profile</h3></strong>
         </div>
 
         <div class="row container quiz-container profile">

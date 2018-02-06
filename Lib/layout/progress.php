@@ -11,7 +11,7 @@
 			                <a href="<?php echo base_url('index.php/Assessment/bmi'); ?>">
 			                	<button class="btn" style="background-color:transparent;" 
 			                	<?php if($qTaken['bmi']==0){echo'disabled';} ?> >
-			                		BMI Test
+			                		Body Mass Index Assessment
 			                	</button>
 			                </a>
 			                <br>
